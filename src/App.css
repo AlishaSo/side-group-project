@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;800&display=swap');
+
+/* || Genereal */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Sarabun', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* || Header */
+header { 
+  padding: 2em;
+  background-color: #1C1C1C;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  margin-left: auto;
+}
+
+a + a {
+  margin-left: 1em;
+}
+
+a {
+  color: #61D9FA;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* || Homepage */
+.homepage-div {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* || Get Song */
+.song-div {
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+form input { 
+  text-align: center;
+  padding: .25em;
+  margin-right: 1em;
+  margin-bottom: 1.5em;
+}
+
+.disclaimer-p {
+  position: relative;
+  top: 100%;
+}
+
+.submit-btn {
+  border: 0;
+  border-radius: 5px;
+  padding: .5em 1em;
+  background-color: #FA9470;
+  color: #fff;
+  cursor: pointer;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: #FFC957;
+}
+
+/* || Meet Team */
+.meet-team-div h2 {
+  color: #FFC957;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.emoji-div {
+  background-color: #1C1C1C;
+  width: 85px;
+  height: 81px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.emoji-div p {
+  align-self: center;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.shane-div .emoji-div {
+  background-color: #FFC957;
+}
+
+.alisha-div .emoji-div {
+  background-color: #FA9470;
+}
+
+.thomas-div .emoji-div {
+  background-color: #61D9FA;
+}
+
+.teammate {
+  color: #FFC957;
+  font-size: 1.25rem;
+}
+
+.homepage-div,
+.song-div,
+.meet-team-div {
+  height: 80vh;
+}
+
+@media screen and (min-width: 600px) {
+  .disclaimer-p {
+    right: -25%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.nav-toggle {
+  display: none;
+}
 }

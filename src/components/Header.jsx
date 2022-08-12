@@ -20,11 +20,11 @@ export default function Header() {
         <button className='nav-toggle'>
           <span className='hamburguer'></span>
         </button>
-        <NavLink to='/'>SAT 2400</NavLink>
+        <NavLink className='logo nav-link' to='/'>SAT 2400</NavLink>
         <nav className={`${menuOpen ? 'visible' : ''}`}>
-          <NavLink to='/'>Home</NavLink>
-          <NavLink to='/get-song'>Get a song</NavLink>
-          <NavLink to='/meet-team'>The Team</NavLink>
+          <NavLink className='nav-link' to='/'>Home</NavLink>
+          <NavLink className='nav-link' to='/get-song'>Get a song</NavLink>
+          <NavLink className='nav-link' to='/meet-team'>The Team</NavLink>
         </nav>
       </div>
     </header>

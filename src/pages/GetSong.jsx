@@ -8,7 +8,7 @@ export default function GetSong() {
   }
 
   return (
-    <div className='song-div'>
+    <div id='song' className='song-div'>
       {/* {song ?  */}
         <div className='form'>
           <h2>Enter a phone number and get a YouTube video tailored to you</h2>
