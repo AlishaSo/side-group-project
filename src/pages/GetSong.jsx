@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import DisplaySong from './DisplaySong';
 
 export default function GetSong() {
   const [song, setSong] = useState('');
@@ -9,7 +10,7 @@ export default function GetSong() {
 
   return (
     <div id='song' className='song-div'>
-      {/* {song ?  */}
+      {song ? 
         <div className='form'>
           <h2>Enter a phone number and get a YouTube video tailored to you</h2>
           <form onSubmit={ handleSubmit }>
@@ -23,11 +24,9 @@ export default function GetSong() {
           </form>
           <p className='disclaimer-p'>* can only send text to US phone numbers</p>
         </div>
-        {/* :
-        <div>
-          <iframe src="" frameborder="0"></iframe>
-        </div>
-      } */}
+        :
+        <DisplaySong />
+      }
     </div>
   )
 }
