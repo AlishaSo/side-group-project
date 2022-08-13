@@ -17,10 +17,10 @@ export default function Header() {
   return (
     <header>
       <div className='wrapper'>
-        <button className='nav-toggle'>
+        <button className='nav-toggle' onClick={() => setMenuOpen(prevMenuOpen => !prevMenuOpen)}>
           <span className='hamburguer'></span>
         </button>
-        <NavLink className='logo nav-link' to='/'>SAT 2400</NavLink>
+        <NavLink className='logo nav-link' to='/'>YourSong 🎧</NavLink>
         <nav className={`${menuOpen ? 'visible' : ''}`}>
           <NavLink className='nav-link' to='/'>Home</NavLink>
           <NavLink className='nav-link' to='/get-song'>Get a song</NavLink>
