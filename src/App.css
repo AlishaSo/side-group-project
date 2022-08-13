@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  min-height: 100%;
+  min-height: 100vh;
   padding: 0;
   margin: 0;
   font-family: 'Sarabun', sans-serif;
@@ -44,7 +44,7 @@ header {
 }
 
 .logo {
-  font-size: calc(1rem + 2vw);
+  font-size: calc(1rem + 1vw);
 }
 
 .nav-toggle {
@@ -160,17 +160,21 @@ main {
   padding: 0 1em;
 }
 
-form input { 
+form input[type='text'] { 
   text-align: center;
   padding: .25em;
   margin-right: 1em;
   margin-bottom: 1.5em;
 }
 
+form input[type='checkbox'] {
+  margin-right: 1em;
+}
+
 .disclaimer-p {
   position: absolute;
   right: 3vw;
-  bottom: -15%;
+  bottom: -12%;
   font-size: .75rem;
 }
 
@@ -180,6 +184,7 @@ form input {
   padding: .5em 1em;
   background-color: #FA9470;
   color: #fff;
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -230,34 +235,53 @@ form input {
 }
 
 .shane-div .emoji-div {
-  background-color: #B3B5A8;
+  background-color: #c4c6ba;
+}
+
+.shane-div .teammate {
+  color: #c4c6ba;
 }
 
 .alisha-div .emoji-div {
   background-color: #FA9470;
 }
 
+.alisha-div .teammate {
+  color: #FA9470;
+}
+
 .thomas-div .emoji-div {
   background-color: #61D9FA;
 }
 
+.thomas-div .teammate {
+  color: #61D9FA;
+}
+
 .teammate {
-  color: #FFC957;
   font-size: 1.25rem;
-  text-transform: uppercase;
+  font-weight: 800;
 }
 
 /* || Footer */
 footer {
   background-color: #1C1C1C;
   height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* || 404 Page */
+footer p {
+  margin: 0;
+}
+
+/* || 404 Error Page */
 .error-div {
   min-height: 100vh;
   background: url('./images/404-img.jpg') center no-repeat;  /* Photo by Ali Saadat (https://unsplash.com/@camsaadat) on Unsplash (https://unsplash.com/) */
   background-size: cover;
+  padding: 0 1em;
 }
 
 .error-div p {
@@ -266,12 +290,104 @@ footer {
   font-size: 1.5rem;
 }
 
-@media screen and (min-width: 600px) {
-  .disclaimer-p {
-    right: -25%;
+/* || Tablet Styles */
+@media screen and (min-width: 600px) and (max-width: 999px) {
+  p {
+    max-width: 700px;
+  }
+
+  .homepage-div {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .homepage-div h1 {
+    font-size: calc(2rem + 1vw);
+  }
+
+  .homepage-div h2 {
+    font-size: calc(1.5rem + 1vw);
   }
 
   .nav-toggle {
-    display: none;
+    visibility: hidden;
+  }
+
+  nav {
+    visibility: visible;
+    position: initial;
+    height: unset;
+    flex-direction: row;
+    margin-left: auto;
+    padding: 0;
+    font-size: calc(.85rem + 1vw);
+  }
+
+  a + a {
+    margin-left: 1em;
+  }
+
+  .nav-link {
+    font-size: calc(1rem + 1vw);
+  }
+
+  .logo {
+    font-size: calc(1rem + 2vw);
+  }
+
+  .song-div h2 {
+    font-size: calc(1.5rem + 1vw);
+  }
+
+  form input[type='text'] {
+    height: 40px;
+    width: 200px;
+    font-size: 1.5rem;
+  }
+
+  .submit-btn {
+    font-size: calc(.9rem + 1vw);
+  }
+
+  form input[type='checkbox'] {
+    height: 30px;
+    width: 30px;
+  }
+  
+  form label {
+    font-size: calc(1rem + 1vw);
+  }
+  
+  .disclaimer-p {
+    right: 2vw;
+    font-size: calc(1rem);
+  }
+
+  .meet-team-div h2 {
+    font-size: calc(2rem + 1vw);
+  }
+
+  .emoji-div p {
+    font-size: calc(2rem + 1vw);
+  }
+
+  .teammate-div p {
+    font-size: calc(1.25rem + 1vw);
+  }
+
+  .shane-div .teammate {
+    font-size: calc(1.25rem + 1vw);
+  }
+
+  .alisha-div .teammate {
+    font-size: calc(1.25rem + 1vw);
+  }
+
+  .thomas-div .teammate {
+    font-size: calc(1.25rem + 1vw);
+  }
+
+  footer p {
+    font-size: 1.3rem;
   }
 }
