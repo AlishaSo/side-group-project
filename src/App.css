@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;800&display=swap');
 
-/* || Genereal */
+/* || General */
 *,
 *::before,
 *::after {
@@ -9,18 +9,25 @@
 
 html {
   min-height: 100vh;
-  background-color: #61D9FA;
+  background-color: #FFC957;
 }
 
 body {
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
   font-family: 'Sarabun', sans-serif;
   text-align: center;
   color: #B3B5A8;
   background: linear-gradient(
     rgba(0, 0, 0, 0.2), 
     rgba(0, 0, 0, 0.2)
-  ),url('./images/photo-1617994452722-4145e196248b.avif') center;
+  ),url('./images/bckg-img.jpg') center;  /* Photo by Pawel Czerwinski (https://unsplash.com/@pawel_czerwinski) on Unsplash (https://unsplash.com/) */
   overflow-x: hidden;
+}
+
+p {
+  text-shadow: 2px 2px 2px #1C1C1C;
 }
 
 /* || Header */
@@ -91,15 +98,16 @@ header {
 
 nav {
   visibility: hidden;
+  display: none;
   background-color: #1C1C1C;
-  opacity: .90;
-  height: 16vh;
+  opacity: .95;
+  height: 20vh;
   text-align: center;
   position: absolute;
   top: 96px;
   right: 0;
   left: 0;
-  margin: auto;
+  padding: 1em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -110,30 +118,20 @@ nav.visible {
   visibility: visible;
 }
 
-/* a + a {
-  margin-left: 1em;
-} */
-
-a {
+.nav-link {
   color: #61D9FA;
   text-decoration: none;
+  transition: transform .2s linear;
 }
 
-a:hover,
-a:focus {
-  text-decoration: underline;
+.nav-link:hover,
+.nav-link:focus {
   color: #FFC957;
-}
-
-a:link,
-a:visited {
-  color: #61D9FA;
+  transform: scale(1.25);
 }
 
 /* || Main */
 main {
-  padding: 1em;
-  /* border: 1px solid red; */
   min-height: 100vh;
 }
 
@@ -144,6 +142,12 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-shadow: 0 0 2px #1C1C1C;
+  padding: 0 1em;
+}
+
+.homepage-div h1 span {
+  color: #FFC957
 }
 
 /* || Get Song */
@@ -153,6 +157,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 1em;
 }
 
 form input { 
@@ -164,14 +169,14 @@ form input {
 
 .disclaimer-p {
   position: absolute;
-  right: 5vw;
-  bottom: -10%;
+  right: 3vw;
+  bottom: -15%;
   font-size: .75rem;
 }
 
 .submit-btn {
   border: 0;
-  border-radius: 5px;
+  border-radius: 25px;
   padding: .5em 1em;
   background-color: #FA9470;
   color: #fff;
@@ -185,18 +190,25 @@ form input {
 
 /* || Meet Team */
 .meet-team-div {
-  padding-bottom: 2em;
+  padding: 0 1em 3em;
+  min-height: 80vh;
 }
 
 .meet-team-div h2 {
   color: #FFC957;
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 500;
-  margin-bottom: 2em;
+  margin: 0 0 2em;
+  padding-top: 1.5em;
 }
 
 .teammate-div + .teammate-div {
   margin-top: 3em;
+}
+
+.teammate-div p {
+  margin: 0 auto;
+  font-size: 1.25rem;
 }
 
 .emoji-div {
@@ -214,6 +226,7 @@ form input {
   align-self: center;
   text-align: center;
   font-size: 2rem;
+  text-shadow: 0 0 1px #1C1C1C;
 }
 
 .shane-div .emoji-div {
@@ -228,15 +241,29 @@ form input {
   background-color: #61D9FA;
 }
 
-.teammate-div p {
-  /* max-width: 400px; */
-  margin: 0 auto;
-}
-
 .teammate {
   color: #FFC957;
   font-size: 1.25rem;
   text-transform: uppercase;
+}
+
+/* || Footer */
+footer {
+  background-color: #1C1C1C;
+  height: 10vh;
+}
+
+/* || 404 Page */
+.error-div {
+  min-height: 100vh;
+  background: url('./images/404-img.jpg') center no-repeat;  /* Photo by Ali Saadat (https://unsplash.com/@camsaadat) on Unsplash (https://unsplash.com/) */
+  background-size: cover;
+}
+
+.error-div p {
+  margin-top: 0;
+  padding-top: 10vh;
+  font-size: 1.5rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -244,7 +271,7 @@ form input {
     right: -25%;
   }
 
-.nav-toggle {
-  display: none;
-}
+  .nav-toggle {
+    display: none;
+  }
 }
