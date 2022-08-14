@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Numbers to Notes (📱➡️🎶)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+What's something we can agree on? For us, that'll be music. And we figured, most other people like music as well. We created this app with the idea that phone numbers are mostly uniqure, and so if we take a phone number and make some magic happen in the background, we can return a song to the user that won't be the same as someone else with a different phone number. Just like that, Numbers to Notes came alive.
 
-## Available Scripts
+## Technologies Used
+- [ReactJS](reactjs.org/)
+- [React Router](https://reactrouter.com/)
+- [Axios](https://axios-http.com/)
+- [Google Fonts](https://fonts.google.com/)
 
-In the project directory, you can run:
+## Wireframes
+### Desktop Views
 
-### `npm start`
+#### Home
+![](./src/images/home_desktop.png)
+#### Get a song
+![](./src/images/get-song_desktop.png)
+#### Display the song
+![](./src/images/display-song_desktop.png)
+#### Meet the team
+![](./src/images/meet-team_desktop.png)
+#### Error Page
+![](./src/images/error-page_desktop.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Mobile Views
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Home
+![](./src/images/home_mobile.png)
+#### Get a song
+![](./src/images/get-song_mobile.png)
+#### Display the song
+![](./src/images/display-song_mobile.png)
+#### Meet the team
+![](./src/images/meet-team_mobile.png)
+#### Error Page
+![](./src/images/error-page_mobile.png)
 
-### `npm test`
+## Component Hierarchy
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## APIs
 
-### `npm run build`
+We used the [Quote Garden](https://github.com/pprathameshmore/QuoteGarden) API to get quotes that contain the word "error" to display on the 404 page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## MVP
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [x] Use Create React App
+- [x] Use React Router
+- [x] Use Axios
+- [x] Have 3 different API endpoints
+- [x] Responsive Design
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Post-MVP
 
-### `npm run eject`
+- [ ] Allow for international numbers
+- [ ] Text the link of the video to the user if they'd like
+- [ ] Dark mode
+- [ ] Have the app behave like an HTML Single Page App
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
