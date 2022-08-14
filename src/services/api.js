@@ -1,9 +1,5 @@
 import axios from 'axios';
 
-<<<<<<< HEAD
-
-
-=======
 //get a random number
 const getRandNum = (min = 0, max) => {
   return Math.floor(Math.random() * (max - min)) + min;
@@ -31,4 +27,3 @@ const getQuote = async () => {
 }
 
 export { getQuote };
->>>>>>> f37fc474cf7374f7161f8c168a9445f3989b1458
