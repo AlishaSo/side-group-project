@@ -8,10 +8,11 @@ export default function GetSong() {
   const [song, setSong] = useState('')
   const [artist, setArtist] = useState('')
   const [number, setNumber] = useState(0);
+  const [phone, setPhone] = useState(0);
 
   const handleChange = (event) =>{
     let newNumber = event.target.value
-      setNumber(newNumber)
+      setPhone(newNumber)
       console.log(number)
   }
 
@@ -61,8 +62,8 @@ if(finalFour > 26){
 
   const handleSubmit = (event) => {
       event.preventDefault()
-      console.log(cipher(number))
-      cipher(number)
+      //console.log(cipher(number))
+      cipher(phone)
   }
 
   return (
@@ -76,7 +77,6 @@ if(finalFour > 26){
             />
         <Search song={song} songName={setSong} artist={artist} artistName={setArtist} style={style} number={number}/>
           </form>
-          <p className='disclaimer-p'>* can only send text to US phone numbers</p>
         </div>
         {/* :
         <div>

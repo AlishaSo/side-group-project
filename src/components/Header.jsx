@@ -4,15 +4,15 @@ import { useState, useEffect } from 'react';
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const closeMenu = e => {
-      if(e.originalTarget.tagName != 'BUTTON' && e.originalTarget.tagName != 'SPAN')
-        setMenuOpen(false);
-    }
-    document.body.addEventListener('click', closeMenu);
+  // useEffect(() => {
+  //   const closeMenu = e => {
+  //     if(e.originalTarget.tagName != 'BUTTON' && e.originalTarget.tagName != 'SPAN')
+  //       setMenuOpen(false);
+  //   }
+  //   document.body.addEventListener('click', closeMenu);
 
-    return () => document.body.addEventListener('click', closeMenu);
-  }, []);
+  //   return () => document.body.addEventListener('click', closeMenu);
+  // }, []);
 
   return (
     <header>
