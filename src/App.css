@@ -328,15 +328,16 @@ footer p {
   }
 
   .nav-link {
-    font-size: calc(1rem + 1vw);
+    font-size: calc(1rem + .5vw);
   }
 
   .logo {
-    font-size: calc(1rem + 2vw);
+    font-size: calc(1rem + 1.5vw);
   }
 
   .song-div h2 {
     font-size: calc(1.5rem + 1vw);
+    max-width: 700px;
   }
 
   form input[type='text'] {
@@ -346,7 +347,7 @@ footer p {
   }
 
   .submit-btn {
-    font-size: calc(.9rem + 1vw);
+    font-size: calc(.9rem + .4vw);
   }
 
   form input[type='checkbox'] {
@@ -363,28 +364,139 @@ footer p {
     font-size: calc(1rem);
   }
 
+  .meet-team-div {
+    padding-bottom: 6em;
+  }
+
   .meet-team-div h2 {
     font-size: calc(2rem + 1vw);
+  }
+
+  .teammate-div p {
+    font-size: calc(1.25rem + .2vw);
   }
 
   .emoji-div p {
     font-size: calc(2rem + 1vw);
   }
 
-  .teammate-div p {
-    font-size: calc(1.25rem + 1vw);
-  }
-
   .shane-div .teammate {
-    font-size: calc(1.25rem + 1vw);
+    font-size: calc(1.25rem + .2vw);
   }
 
   .alisha-div .teammate {
-    font-size: calc(1.25rem + 1vw);
+    font-size: calc(1.25rem + .2vw);
   }
 
   .thomas-div .teammate {
-    font-size: calc(1.25rem + 1vw);
+    font-size: calc(1.25rem + .2vw);
+  }
+
+  footer p {
+    font-size: 1.3rem;
+  }
+}
+
+/* || Desktop Styles */
+@media screen and (min-width: 1000px) {
+  p {
+    max-width: 700px;
+  }
+
+  .homepage-div {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .homepage-div h1 {
+    font-size: calc(2rem + 1vw);
+  }
+
+  .homepage-div h2 {
+    font-size: calc(1.5rem + 1vw);
+  }
+
+  .nav-toggle {
+    visibility: hidden;
+  }
+
+  nav {
+    visibility: visible;
+    position: initial;
+    height: unset;
+    flex-direction: row;
+    margin-left: auto;
+    padding: 0;
+    font-size: calc(.85rem + 1vw);
+  }
+
+  a + a {
+    margin-left: 1em;
+  }
+
+  .nav-link {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    font-size: 2.1rem;
+  }
+
+  .song-div h2 {
+    font-size: 2.1rem;
+    max-width: 700px;
+  }
+
+  form input[type='text'] {
+    height: 40px;
+    width: 200px;
+    font-size: 1.5rem;
+  }
+
+  .submit-btn {
+    font-size: 1.3rem;
+  }
+
+  form input[type='checkbox'] {
+    height: 30px;
+    width: 30px;
+  }
+  
+  form label {
+    font-size: 1.3rem;
+  }
+  
+  .disclaimer-p {
+    right: 2vw;
+    font-size: calc(1rem);
+  }
+
+  .meet-team-div {
+    padding-bottom: 6em;
+  }
+
+  .meet-team-div h2 {
+    font-size: calc(2rem + 1vw);
+  }
+
+  .teammate-div p {
+    font-size: 1.5rem;
+  }
+
+  .emoji-div p {
+    font-size: calc(2rem + 1vw);
+  }
+
+  .shane-div .teammate {
+    font-size: 1.5rem;
+  }
+
+  .alisha-div .teammate {
+    font-size: 1.5rem;
+  }
+
+  .thomas-div .teammate {
+    font-size: 1.5rem;
   }
 
   footer p {
