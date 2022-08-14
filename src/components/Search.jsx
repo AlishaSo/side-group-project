@@ -36,12 +36,12 @@ const search = async ()=>{
         return(
             <div>
                 {videoInfo.title !== undefined ? 
-                <><h3 className='vid title'>youtubeVideo.title</h3></> : <><br/>
+                <><h3 className='vid title'>youtubeVideo.title</h3><Display videoId={videoId}/></> : <><br/>
                 <button className='btn submit-btn' onSubmit={()=>HandleSubmit()} >Submit</button>
                 <br/>
                 <input type='checkbox' />
             <label>Check this box if you would like to receive the link via text*</label></>}
-            <Display videoId={videoId}/>
+  
             </div>
         )
     }
