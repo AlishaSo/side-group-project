@@ -8,7 +8,7 @@ What's something we can agree on? For us, that'll be music. And we figured, most
 - [Axios](https://axios-http.com/)
 - [Google Fonts](https://fonts.google.com/)
 - [React Youtube](https://www.npmjs.com/package/react-youtube)
-- []
+
 
 ## Wireframes
 ### Desktop Views
