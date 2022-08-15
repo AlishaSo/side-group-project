@@ -104,7 +104,7 @@ function HandleSearchClick(){
   return (
     <div id='song' className='song-div'>
       {videoInfo?.title !== undefined ? 
-                <><h3 className='vid title'>{videoInfo?.title}</h3><Display videoId={videoId}/></> : <><div className='form'>
+                <><h2 className='vid-title'>{videoInfo?.title}</h2><Display videoId={videoId}/></> : <><div className='form'>
           <h2>Enter a phone number and get a YouTube video tailored to you</h2>
           <form onSubmit={ handleSubmit }>
             <input onChange={ handleChange }
