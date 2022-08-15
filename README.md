@@ -1,6 +1,6 @@
 # Numbers to Notes (📱➡️🎶)
 
-What's something we can agree on? For us, that'll be music. And we figured, most other people like music as well. We created this app with the idea that phone numbers are mostly uniqure, and so if we take a phone number and make some magic happen in the background, we can return a song to the user that won't be the same as someone else with a different phone number. Just like that, Numbers to Notes came alive.
+What's something we can agree on? For us, that'll be music. And we figured, most other people like music as well. We created this app with the idea that phone numbers are mostly unique, and so if we take a phone number and make some magic happen in the background, we can return a song to the user that won't be the same as someone else with a different phone number. Just like that, Numbers to Notes came alive.
 
 ## Technologies Used
 - [ReactJS](reactjs.org/)
@@ -36,10 +36,11 @@ What's something we can agree on? For us, that'll be music. And we figured, most
 ![](./src/images/error-page_mobile.png)
 
 ## Component Hierarchy
+![](./src/images/component-hierarchy.png)
 
 ## APIs
 
-We used the [Quote Garden](https://github.com/pprathameshmore/QuoteGarden) API to get quotes that contain the word "error" to display on the 404 page
+We used the [Youtube API](https://developers.google.com/youtube/v3) to retrieve the data for the video and also the [Quote Garden](https://github.com/pprathameshmore/QuoteGarden) API to get quotes that contain the word "error" to display on the 404 page
 
 ## MVP
 
@@ -53,7 +54,7 @@ We used the [Quote Garden](https://github.com/pprathameshmore/QuoteGarden) API t
 
 - [ ] Allow for international numbers
 - [ ] Text the link of the video to the user if they'd like
-- [ ] Dark mode
 - [ ] Have the app behave like an HTML Single Page App
+
 
 
