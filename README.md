@@ -1,6 +1,6 @@
 # Numbers to Notes (📱➡️🎶)
 
-What's something we can agree on? For us, that'll be music. And we figured, most other people like music as well. We created this app with the idea that phone numbers are mostly unique, and so if we take a phone number and make some magic happen in the background, we can return a song to the user that won't be the same as someone else with a different phone number. Just like that, Numbers to Notes came alive.
+What's something we can agree on? For us, that'll be music. And we figured, most other people like music as well. We created this app with the idea that phone numbers are mostly unique, and so if we take a phone number and make some magic happen in the background, we can return a song to the user that won't be the same as someone else with a different phone number. Just like that, Numbers to Notes came alive. Live site [here](https://numberstonotes.netlify.app/) 
 
 ## Technologies Used
 - [ReactJS](reactjs.org/)
